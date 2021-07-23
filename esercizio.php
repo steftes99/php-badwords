@@ -1,6 +1,6 @@
 <?php 
     $frase = 'Ciao! Come va? A me bene, ho iniziato il corso Boolean da 3 mesi e oggi abbiamo iniziato php, un abbraccio.'
-
+    
 ?>
 
 <!DOCTYPE html>
@@ -16,8 +16,12 @@
     <p>
         <?php
             echo $frase;
+
+            $frase_len = strlen($frase);
         ?>
     </p>
+
+    <p> la frase è lunga <?php echo $frase_len?> caratteri </p>
     
 </body>
 </html>
