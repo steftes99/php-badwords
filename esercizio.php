@@ -1,6 +1,8 @@
 <?php 
-    $frase = 'Ciao! Come va? A me bene, ho iniziato il corso Boolean da 3 mesi e oggi abbiamo iniziato php, un abbraccio.'
+    $frase = 'Ciao! Come va? A me bene, ho iniziato il corso Boolean da 3 mesi e oggi abbiamo iniziato php, un abbraccio.';
+    $censura = 'Boolean';
     
+
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +24,19 @@
     </p>
 
     <p> la frase è lunga <?php echo $frase_len?> caratteri </p>
+
+    <h2>Frase censurata</h2>
+
+    <p>
+       <?php
+        $fraseCensurata = str_replace($censura, '***', $frase);
+        echo $fraseCensurata;
+
+        $fraseCensurata_len = strlen($fraseCensurata);
+       ?>
+    </p>
+
+    <p>la frase censurata è lunga <?php echo $fraseCensurata_len ?> caratteri</p>
     
 </body>
 </html>
