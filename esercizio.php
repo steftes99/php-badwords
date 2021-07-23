@@ -1,3 +1,8 @@
+<?php 
+    $frase = 'Ciao! Come va? A me bene, ho iniziato il corso Boolean da 3 mesi e oggi abbiamo iniziato php, un abbraccio.'
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +12,12 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>Frase non censurata</h2>
+    <p>
+        <?php
+            echo $frase;
+        ?>
+    </p>
     
 </body>
 </html>
