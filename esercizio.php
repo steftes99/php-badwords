@@ -1,8 +1,6 @@
 <?php 
     $frase = 'Ciao! Come va? A me bene, ho iniziato il corso Boolean da 3 mesi e oggi abbiamo iniziato php, un abbraccio.';
-    $censura = 'Boolean';
-    
-
+    $censura = $_GET['censura'];
 ?>
 
 <!DOCTYPE html>
